@@ -126,18 +126,14 @@ header{
   background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("20240116_071939.jpg") no-repeat center center;
   background-size:cover;
   overflow:hidden;
-  will-change:transform;
-  perspective:1px;
 }
 
-/* HERO LOGO & TEXT SIMULTAN */
+/* HERO LOGO & TEXT */
 .hero-logo, .hero-text{
   opacity:0;
   animation:fadeIn 1.2s ease forwards;
 }
-.hero-logo{
-  width:260px;
-}
+.hero-logo{width:260px;}
 .hero-text{
   font-family:'Playfair Display';
   color:#fff;
@@ -219,8 +215,11 @@ h2{font-family:'Playfair Display';color:#111;font-size:38px;margin-bottom:20px}
   border-radius:15px;
   box-shadow:0 0 10px rgba(0,0,0,.1);
 }
+
+/* FIX IMAGE ROOMS */
 .cards .card img {
-  height:180px;
+  width:100%;
+  height:auto;
   object-fit:cover;
   display:block;
   margin-top:10px;
@@ -278,19 +277,13 @@ footer{text-align:center;background:#f0f0f0;padding:20px;color:#111}
   .hero-text{font-size:28px}
 }
 
-/* ===================== */
-/* RESPONSIVE FIX ONLY  */
-/* ===================== */
-
+/* RESPONSIVE UMUM */
 @media(max-width:768px){
   nav{padding:12px 20px;}
   section{padding:70px 6%;}
-  .hero-logo{width:160px;}
-  .hero-text{font-size:26px;}
   h2{font-size:28px;}
   .cards{grid-template-columns:1fr;}
   .gallery{grid-template-columns:1fr;}
-  .card img{height:200px;}
   .map iframe{height:300px;}
   footer{font-size:13px;}
   input,textarea,button{font-size:16px;}
